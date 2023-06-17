@@ -1,20 +1,24 @@
 // **Function declaration are hoisted 
 //hoisting
-//--You cannot host/call before write command in Function E xpression and Arrow Function but you call bafore in Function Declaration
-//Function Expression 
-// const helloworld = function {
-//     console.log("hello world")
+//--You cannot host/call before write command in Function Expression and Arrow Function but you call bafore in Function Declaration
+//Function Declaration Case 
+// ex:- 
+// hello()
+
+// function hello(){
+//     console.log("hello world");
 // }
 
-//Function Declaration
-// function findtarget (array,target){
-//     for (let i=0; i<array.length;i++){
-//         if (array[i]===0);
-//             return i;
-//     }
-//     return -1
-// }
-// const myArray = [2,3,5,6,5]
-// const ans = findtarget(myArray,9);
-// console.log(ans);
+// hello()
+//it works in this case
+/////////////////////////////
+// In Function Expression Case
+//ex:-
+
+hello();
+
+const hello = function(){
+    console.log("hello world");
+}
+// call for print in this case is not work also in arrow function case
 
